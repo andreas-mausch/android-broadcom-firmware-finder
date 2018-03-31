@@ -1,0 +1,14 @@
+My Raspberry runs Raspbian Stretch 9.3.
+
+brcmfmac43430-sdio.bin (Size: 388739)
+43430a1-roml/sdio-g-pool-p2p-idsup-idauth-pno-pktfilter-wowlpf-keepalive-aoe-lpc-swdiv-srfast-fuart Version: 7.45.98.38 (r674442 CY) CRC: ffb2ee5a Date: Mon 2017-10-23 03:58:00 PDT Ucode Ver: 1043.2099 FWID 01-e58d219f
+
+Apparently, this is a newer file than in https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/brcm/brcmfmac43430-sdio.bin
+
+brcmfmac43430-sdio.bin (Size: 369577)
+43430a1-roml/sdio-g-p2p-pool-pno-pktfilter-keepalive-aoe-mchan-tdls-proptxstatus-ampduhostreorder-lpc-sr-bcmcps Version: 7.45.41.26 CRC: a75d4f1b Date: Mon 2016-08-29 20:53:22 CEST Ucode Ver: 1043.2060 FWID: 01-4527cfab
+
+Why, Linus?
+
+See also:
+https://github.com/LibreELEC/brcmfmac_sdio-firmware-rpi/pull/1/files
