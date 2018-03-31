@@ -31,7 +31,7 @@ For example output, see the output directory.
 
 ## Building the docker image
 
-Clone this repository and call inside the directory:
+If you want to build the image yourself instead of using the one provided on Docker Hub ([https://hub.docker.com/r/andreasmausch/android-broadcom-firmware-finder/](https://hub.docker.com/r/andreasmausch/android-broadcom-firmware-finder/)), you can clone this repository and call inside the directory:
 
 ```
 docker build -t andreasmausch/android-broadcom-firmware-finder .
