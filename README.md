@@ -1,8 +1,9 @@
 # Android Broadcom Firmware Finder
 
-This docker image finds broadcom firmware files inside of an Android image.
+This docker image finds broadcom firmware files inside of an Android image.  
+It can be used to find firmwares which are vulnerable to [BroadPwn](https://blog.exodusintel.com/2017/07/26/broadpwn/). If the firmware files are dated before 2017-06, they are vulnerable.
 
-The input file is the Android image, e.g. **lineage-14.1-20180325-nightly-zerofltexx-signed.zip**
+The input file is the Android image, e.g. *lineage-14.1-20180325-nightly-zerofltexx-signed.zip*.
 
 ## Run the docker image
 
