@@ -31,8 +31,10 @@ Found broadcom firmware: ./image.zip-image/etc/wifi/bcmdhd_sta.bin
 Android image on your local hard drive in this case is here: _/home/neonew/Downloads/lineage-14.1-20180325-nightly-zerofltexx-signed.zip_
 (Adjust it to point to your image)
 
-You can adjust the pattern by passing a parameter "--pattern=xyz" right before "image.zip".
+You can adjust the pattern by passing a parameter *--pattern=xyz* right before *image.zip*.
 The default pattern is _*bcmdhd*.bin_.
+
+You can hide verbose logging via parameter *--log-level=ERROR*.
 
 ## Building the docker image
 
@@ -41,3 +43,7 @@ Clone this repository and call inside the directory:
 ```
 docker build -t andreas-mausch/android-broadcom-firmware-finder .
 ```
+
+## More details on how to extract files from a LineageOS image
+
+[https://wiki.lineageos.org/extracting_blobs_from_zips.html](https://wiki.lineageos.org/extracting_blobs_from_zips.html)
