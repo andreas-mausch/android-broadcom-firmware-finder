@@ -1,0 +1,23 @@
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_apsta.bin (Size: 512114)
+4358a3-roml/pcie-ag-pktctx-txbf-lpc-clm_ss_mimo-txpwr-apcs-proptxstatus-ampduhostreorder-pspretend-sarctrl-amsdutx5g-btcdyn-mfp-xorcsum-fpl2g Version: 7.112.48 (A3 SoftAP feature) CRC: 9b486866 Date: Thu 2016-12-22 17:46:49 KST Ucode Ver: 963.323 FWID: 01-1b267cca
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_apsta.bin_a1 (Size: 534069)
+4358a1-roml/pcie-ag-pktctx-txbf-lpc-clm_ss_mimo-txpwr-apcs-proptxstatus-ampduhostreorder-pspretend-sarctrl-amsdutx5g-btcdyn-mfp-xorcsum-fpl2g Version: 7.112.48 (A1 SoftAP feature) CRC: a55db15 Date: Thu 2016-12-22 17:45:03 KST Ucode Ver: 963.323 FWID: 01-f926fba7
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_ibss.bin (Size: 508081)
+4358a3-roml/pcie-ag-p2p-pktctx-aibss-relmcast-proptxstatus-ampduhostreorder-sr-aoe-pktfilter-keepalive-clm_ss_mimo-sarctrl-sstput-xorcsum-fpl2g Version: 7.112.17.23 CRC: f956ac3b Date: Tue 2016-08-09 15:16:27 KST Ucode Ver: 986.11001 FWID: 01-14205a46
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_ibss.bin_a1 (Size: 539757)
+4358a1-roml/pcie-ag-p2p-pktctx-aibss-relmcast-proptxstatus-ampduhostreorder-sr-aoe-pktfilter-keepalive-clm_ss_mimo-sarctrl-sstput-xorcsum-fpl2g Version: 7.112.17.23 CRC: e284331c Date: Tue 2016-08-09 15:14:22 KST Ucode Ver: 986.11001 FWID: 01-fc8874ec
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_mfg.bin (Size: 531592)
+4358a3-roml/pcie-ag-pktctx-mfgtest-seqcmds-txbf-sr-srfast-sarctrl-xorcsum-clm_ss_mimo-proptxstatus-phydbg-fpl2g Version: 7.112.48 (A3 WLTEST) CRC: 6dffc350 Date: Thu 2016-12-22 17:51:25 KST Ucode Ver: 963.323 FWID: 01-fa047ce2
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_mfg.bin_a1 (Size: 552520)
+4358a1-roml/pcie-ag-pktctx-mfgtest-seqcmds-txbf-sr-srfast-sarctrl-xorcsum-clm_ss_mimo-proptxstatus-phydbg-fpl2g Version: 7.112.48 (A1 WLTEST) CRC: 3b2af29a Date: Thu 2016-12-22 17:49:33 KST Ucode Ver: 963.323 FWID: 01-183d039d
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_sta.bin (Size: 582807)
+4358a3-roml/pcie-ag-p2p-pno-aoe-pktfilter-keepalive-sr-mchan-pktctx-hostpp-lpc-pwropt-txbf-wl11u-mfp-wnm-betdls-amsdutx5g-okc-ccx-ve-clm_ss_mimo-txpwr-rcc-fmc-wepso-noccxaka-sarctrl-btcdyn-xorcsum-dpm-shif-idsup-ndoe-fpl2g-hthrot-apf Version: 7.112.48 (A3 Station/P2P feature) CRC: d32609fb Date: Thu 2016-12-22 17:42:28 KST Ucode Ver: 963.323 FWID: 01-9bf0b5ec
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_sta.bin_a1 (Size: 602601)
+4358a1-roml/pcie-ag-p2p-pno-aoe-pktfilter-keepalive-sr-mchan-pktctx-hostpp-lpc-pwropt-txbf-wl11u-mfp-wnm-betdls-amsdutx5g-okc-ccx-ve-clm_ss_mimo-txpwr-rcc-fmc-wepso-noccxaka-sarctrl-btcdyn-xorcsum-ndoe-fpl2g-apf Version: 7.112.48 (A1 Station/P2P feature) CRC: 3e328ee2 Date: Thu 2016-12-22 17:40:40 KST Ucode Ver: 963.323 FWID: 01-ac79b923

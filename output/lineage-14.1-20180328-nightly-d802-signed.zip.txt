@@ -1,0 +1,5 @@
+Found firmware: ./image.zip-image/etc/firmware/fw_bcmdhd.bin (Size: 608792)
+4335b0-roml/sdio-ag-pool-p2p-pno-pktfilter-keepalive-aoe-sr-vsdb-proptxstatus-lpc-wl11u-tdls-autoabn-txbf-rcc-wepso-ve-ccx-ltecx-ndoe-clm_43xx_lg-maxxtaldrv Version: 6.34.171.60 CRC: 6ebf0065 Date: Mon 2014-12-15 18:01:48 KST FWID 01-653808f8
+
+Found firmware: ./image.zip-image/etc/firmware/fw_bcmdhd_apsta.bin (Size: 522580)
+4335b0-roml/sdio-ag-pool-autoabn-lpc-ltecx-txpwr-esap-clm_43xx_lg-maxxtaldrv Version: 6.34.171.60 CRC: aeec8492 Date: Mon 2014-12-15 18:07:15 KST FWID 01-bdc48d58

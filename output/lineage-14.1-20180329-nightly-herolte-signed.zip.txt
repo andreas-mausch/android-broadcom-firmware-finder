@@ -1,0 +1,44 @@
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_apsta.bin_b1 (Size: 625102)
+4359b1-roml/pcie-wl11u-ve-mfp-okc-sr-die3-betdls-pwrofs-wepso-sarctrl-wnm-pfn-hs20sta-dpm-lpc-olpc-mobfd-txbf-apcs-pspretend-rcc-slna-ccx-noccxaka-clm_ss_mimo-txpwr-fmc-pwrofs5g-fpl2g-hthrot-apf Version: 9.35.48.101 (B1 Network) CRC: 93b1a032 Date: Thu 2016-11-17 15:08:51 KST Ucode Ver: 1043.20414 FWID: 01-43f44477
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_apsta.bin_b90s_b1 (Size: 669169)
+4359b1-roml/pcie-ve-mfp-okc-idsup-sr-die3-wepso-wnm-pfn-hs20sta-olpc-mobfd-apcs-pspretend-rcc-ccx-noccxaka-clm_ss_mimo-fmc-rapsta-rscanf-roamol-lowtput-pwrofs-pwrofs5g-sarctrl-lpc-txpwr-fpl2g-dpm-pf2 Version: 9.75.155.34 CRC: 41308e60 Date: Thu 2016-08-04 19:14:36 KST Ucode Ver: 1060.2054 FWID: 01-e8ef6eab
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_apsta.bin_c0 (Size: 586896)
+43596a0-roml/config_pcie_release Version: 9.75.155.47 (C0 Network/rsdb) CRC: 4316a484 Date: Fri 2017-03-10 11:19:16 KST Ucode Ver: 1060.2064 FWID: 01-5b29fae8
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_ibss.bin_b1 (Size: 571704)
+4359b1-roml/pcie-mobfd-aibss-relmcast-sr-ps-die3-slna-clm_ss_mimo-norsdb-pwrofs5g-fpl2g Version: 9.35.48.101 (B1 IBSS) CRC: cd485170 Date: Thu 2016-11-17 15:13:00 KST Ucode Ver: 1043.20414 FWID: 01-3c99437f
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_ibss.bin_b90s_b1 (Size: 621389)
+4359b1-roml/pcie-mobfd-aibss-relmcast-sr-ps-die3-slna-clm_ss_mimo-norsdb-pwrofs5g-fpl2g Version: 9.75.155.34 CRC: b63326c7 Date: Thu 2016-08-04 19:18:23 KST Ucode Ver: 1060.2054 FWID: 01-7a49e3f4
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_ibss.bin_c0 (Size: 527152)
+43596a0-roml/config_pcie_oxy_release Version: 9.75.155.47 (C0 IBSS) CRC: ebeb09fc Date: Fri 2017-03-10 11:21:52 KST Ucode Ver: 1060.2064 FWID: 01-b6b65366
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_mfg.bin_b1 (Size: 604929)
+4359b1-roml/pcie-ag-msgbuf-p2p-mchan-splitrx-pktctx-ampduhostreorder-nvramadj-sr-mfgtest-die3-proptxstatus-pwrofs-pwrstats-slna-sarctrl-pwrofs5g-fpl2g-seqcmds Version: 9.35.48.101 (B1 WLTEST) CRC: cc4827bd Date: Thu 2016-11-17 15:17:12 KST Ucode Ver: 1043.20414 FWID: 01-6bf503b3
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_mfg.bin_b90s_b1 (Size: 647732)
+4359b1-roml/pcie-ag-msgbuf-p2p-mchan-splitrx-pktctx-ampduhostreorder-nvramadj-sr-mfgtest-die3-proptxstatus-pwrofs-pwrstats-slna-sarctrl-pwrofs5g-fpl2g Version: 9.75.155.34 CRC: 3ea1a6b5 Date: Thu 2016-08-04 19:22:10 KST Ucode Ver: 1060.2054 FWID: 01-ede8d04d
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_mfg.bin_c0 (Size: 583381)
+43596a0-roml/config_pcie_mfg Version: 9.96.4 (C0 WLTEST) CRC: e1039217 Date: Mon 2017-09-04 13:09:28 KST Ucode Ver: 1060.2064 FWID: 01-dbe58b71
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_mfg2.bin_b1 (Size: 577106)
+4359b1-roml/pcie-ag-msgbuf-p2p-mchan-splitrx-pktctx-ampduhostreorder-sr-mfgtest-die3-proptxstatus-pwrofs-pwrstats-slna-vcotune Version: 9.35.48.0 CRC: 9b238f5e Date: Thu 2015-06-25 10:18:27 IST Ucode Ver: 1043.2039 FWID: 01-445645b0
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_mfg2.bin_b90s_b1 (Size: 577106)
+4359b1-roml/pcie-ag-msgbuf-p2p-mchan-splitrx-pktctx-ampduhostreorder-sr-mfgtest-die3-proptxstatus-pwrofs-pwrstats-slna-vcotune Version: 9.35.48.0 CRC: 9b238f5e Date: Thu 2015-06-25 10:18:27 IST Ucode Ver: 1043.2039 FWID: 01-445645b0
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_mfg2.bin_c0 (Size: 577106)
+4359b1-roml/pcie-ag-msgbuf-p2p-mchan-splitrx-pktctx-ampduhostreorder-sr-mfgtest-die3-proptxstatus-pwrofs-pwrstats-slna-vcotune Version: 9.35.48.0 CRC: 9b238f5e Date: Thu 2015-06-25 10:18:27 IST Ucode Ver: 1043.2039 FWID: 01-445645b0
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_sta.bin_b1 (Size: 625102)
+4359b1-roml/pcie-wl11u-ve-mfp-okc-sr-die3-betdls-pwrofs-wepso-sarctrl-wnm-pfn-hs20sta-dpm-lpc-olpc-mobfd-txbf-apcs-pspretend-rcc-slna-ccx-noccxaka-clm_ss_mimo-txpwr-fmc-pwrofs5g-fpl2g-hthrot-apf Version: 9.35.48.101 (B1 Network) CRC: 93b1a032 Date: Thu 2016-11-17 15:08:51 KST Ucode Ver: 1043.20414 FWID: 01-43f44477
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_sta.bin_b90s_b1 (Size: 669169)
+4359b1-roml/pcie-ve-mfp-okc-idsup-sr-die3-wepso-wnm-pfn-hs20sta-olpc-mobfd-apcs-pspretend-rcc-ccx-noccxaka-clm_ss_mimo-fmc-rapsta-rscanf-roamol-lowtput-pwrofs-pwrofs5g-sarctrl-lpc-txpwr-fpl2g-dpm-pf2 Version: 9.75.155.34 CRC: 41308e60 Date: Thu 2016-08-04 19:14:36 KST Ucode Ver: 1060.2054 FWID: 01-e8ef6eab
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_sta.bin_c0 (Size: 598599)
+43596a0-roml/config_pcie_release Version: 9.96.4 (C0 Network/rsdb) CRC: 7bef3afc Date: Mon 2017-09-04 13:04:16 KST Ucode Ver: 1060.2064 FWID: 01-ed967042

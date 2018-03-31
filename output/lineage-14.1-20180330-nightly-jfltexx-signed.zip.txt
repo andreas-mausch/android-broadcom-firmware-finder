@@ -1,0 +1,11 @@
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_apsta.bin (Size: 523024)
+4335b0-roml/sdio-ag-pool-autoabn-lpc-ltecx-txpwr-clm_4335_ss-txpwr Version: 6.30.171.1 CRC: 37611de Date: Thu 2015-03-05 16:51:42 KST FWID 01-e65700ed
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_ibss.bin (Size: 512427)
+4335b0-roml/sdio-ag-pool-p2p-pno-pktfilter-keepalive-aoe-sr-vsdb-proptxstatus-autoabn-ampduhostreorder-aibss-relmcast-clm_4335_ss Version: 6.38.12.0 CRC: a2f5bae8 Date: Sun 2015-01-04 16:24:03 KST FWID 01-7b9f7762
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_mfg.bin (Size: 546885)
+4335b0-roml/sdio-ag-mfgtest-seqcmds-sr-autoabn Version: 6.30.171.1 CRC: 234a2fb6 Date: Thu 2015-03-05 16:55:16 KST FWID 01-63bb0526
+
+Found firmware: ./image.zip-image/etc/wifi/bcmdhd_sta.bin (Size: 617552)
+4335b0-roml/sdio-ag-pool-p2p-pno-pktfilter-keepalive-aoe-sr-vsdb-proptxstatus-lpc-wl11u-betdls-autoabn-txbf-rcc-fmc-wepso-ve-ccx-okc-ltecx-clm_4335_ss-txpwr-noccxaka-mfp Version: 6.30.171.1 CRC: 16cc5f59 Date: Thu 2015-03-05 16:47:36 KST FWID 01-c016b565
