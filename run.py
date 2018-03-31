@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
 import logging
+import os.path
+import time
+from datetime import datetime
 from plumbum.cmd import unzip, mkdir, mount, umount, tail, find, strings, rm
 from plumbum import cli
 from plumbum import local
@@ -10,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 class FirmwareFinder(cli.Application):
 
-    pattern = cli.SwitchAttr("--pattern", str, default = '*bcmdhd*.bin')
+    pattern = cli.SwitchAttr("--pattern", str, default = '*bcmdhd*.bin*')
     logLevel = cli.SwitchAttr("--log-level", str, default = 'DEBUG')
 
     def main(self, *srcfiles):
@@ -45,7 +48,7 @@ class FirmwareFinder(cli.Application):
         firmwares = find(directory, '-iname', self.pattern).splitlines()
 
         for firmware in firmwares:
-            print 'Found broadcom firmware: %s' % firmware
+            print 'Found firmware: %s (Size: %d)' % (firmware, os.path.getsize(firmware))
             versionCommand = strings[firmware] | tail['-1']
             print versionCommand()
 
