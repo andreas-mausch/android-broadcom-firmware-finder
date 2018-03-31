@@ -8,7 +8,7 @@ The input file is the Android image, e.g. *lineage-14.1-20180325-nightly-zeroflt
 ## Run the docker image
 
 ```
-$ docker run -it --rm --privileged -v /home/neonew/Downloads/lineage-14.1-20180325-nightly-zerofltexx-signed.zip:/opt/android-broadcom-firmware-finder/image.zip:ro andreas-mausch/android-broadcom-firmware-finder image.zip
+$ docker run -it --rm --privileged -v /home/neonew/Downloads/lineage-14.1-20180325-nightly-zerofltexx-signed.zip:/opt/android-broadcom-firmware-finder/image.zip:ro andreasmausch/android-broadcom-firmware-finder image.zip
 
 Unzipping system.transfer.list and system.new.dat from image file "image.zip"..
 done
@@ -34,7 +34,7 @@ For example output, see the output directory.
 Clone this repository and call inside the directory:
 
 ```
-docker build -t andreas-mausch/android-broadcom-firmware-finder .
+docker build -t andreasmausch/android-broadcom-firmware-finder .
 ```
 
 ## More details on how to extract files from a LineageOS image
