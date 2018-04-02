@@ -15,7 +15,8 @@ logger = logging.getLogger(__name__)
 
 class FirmwareFinder(cli.Application):
 
-    pattern = cli.SwitchAttr("--pattern", str, default = '*bcmdhd*.bin*')
+    broadcomPattern = cli.SwitchAttr("--broadcom-pattern", str, default = '*bcmdhd*.bin*')
+    samsungPattern = cli.SwitchAttr("--samsung-pattern", str, default = 'AP_*.tar.md5')
     logLevel = cli.SwitchAttr("--log-level", str, default = 'DEBUG')
 
     def main(self, *srcfiles):
@@ -32,14 +33,26 @@ class FirmwareFinder(cli.Application):
 
     def extractImage(self, filename):
         local.cwd.chdir('/opt/android-broadcom-firmware-finder')
-        z = zipfile.ZipFile(filename)
-        if 'system.transfer.list' in z.namelist() and 'system.new.dat' in z.namelist():
-            self.extractLineageOsImage(filename)
-        else:
-            self.extractSamsungStockImage(filename)
+        try:
+            z = zipfile.ZipFile(filename)
+            list = z.namelist()
+            if 'system.transfer.list' in list and 'system.new.dat' in z.namelist():
+                logger.debug('Found LineageOS image')
+                self.handleLineageOsImage(filename)
+            elif self.findFileByPattern(list, self.samsungPattern) is not None:
+                logger.debug('Found Samsung Stock image')
+                self.handleSamsungStockImage(filename)
+        except zipfile.BadZipfile:
+            if filename == 'system.img':
+                logger.debug('Found Android Sparse image')
+                self.handleSystemImage(filename)
+            elif filename == 'system.ext4.img':
+                logger.debug('Found ext4 image')
+                self.handleSystemExt4Image(filename)
+            else:
+                print 'Unknown input file "%s", exiting.' % filename
 
-    def extractLineageOsImage(self, filename):
-        logger.debug('Found LineageOS image')
+    def handleLineageOsImage(self, filename):
         logger.debug('Unzipping system.transfer.list and system.new.dat from image file "%s"..' % filename)
         unzip('-o', filename, 'system.transfer.list', 'system.new.dat')
         logger.debug('done')
@@ -49,51 +62,57 @@ class FirmwareFinder(cli.Application):
         sdat2img = python['sdat2img/sdat2img.py', 'system.transfer.list', 'system.new.dat', 'system.img']
         sdat2img()
         logger.debug('done')
-        logger.debug('Searching for files which match pattern "%s"' % self.pattern)
 
-        self.mountAndAnalyseFirmwares('system.img')
+        self.handleSystemExt4Image('system.img')
 
         rm('-rf', 'system.transfer.list', 'system.new.dat', 'system.img')
 
-    def extractSamsungStockImage(self, filename):
-        logger.debug('Found Samsung Stock image')
-        logger.debug('Unzipping AP_*.tar.md5 from image file "%s"..' % filename)
-        unzip('-o', filename, 'AP_*.tar.md5')
-        apFilename = self.findFileByPattern('AP_*.tar.md5')
+    def handleSamsungStockImage(self, filename):
+        logger.debug('Unzipping "%s" from image file "%s"..' % (self.samsungPattern, filename))
+        unzip('-o', filename, self.samsungPattern)
+        apFilename = self.findFileByPattern(os.listdir('.'), self.samsungPattern)
         logger.debug('done: %s', apFilename)
 
         logger.debug('Extracting system.img from tarball')
         tar('xf', apFilename, 'system.img')
         logger.debug('done')
 
-        logger.debug('simg2img: convert system.img to system.ext4.img')
+        self.handleSystemImage('system.img')
+        rm('-rf', 'system.img')
+
+    def handleSystemImage(self, filename):
+        logger.debug('simg2img: convert %s to system.ext4.img' % filename)
         simg2img = local['./simg2img/simg2img']
-        simg2img('system.img', 'system.ext4.img')
+        simg2img(filename, 'system.ext4.img')
         logger.debug('done')
 
-        self.mountAndAnalyseFirmwares('system.ext4.img')
+        self.handleSystemExt4Image('system.ext4.img')
+        rm('-rf', 'system.ext4.img')
 
-        rm('-rf', 'system.ext4.img', 'system.img')
-
-    def mountAndAnalyseFirmwares(self, systemImageFilename):
+    def handleSystemExt4Image(self, systemImageFilename):
+        logger.debug('Searching for files which match pattern "%s"' % self.broadcomPattern)
         directory = './mounted-image'
         mkdir(directory)
         mount(systemImageFilename, directory)
 
-        firmwares = find(directory, '-iname', self.pattern).splitlines()
+        firmwares = find(directory, '-iname', self.broadcomPattern).splitlines()
 
         for firmware in firmwares:
             print 'Found firmware: %s (Size: %d)' % (firmware, os.path.getsize(firmware))
             versionCommand = strings[firmware] | tail['-1']
             print versionCommand()
 
+        if not firmwares:
+            print 'No firmwares found.'
+
         umount(directory)
         rm('-rf', directory)
 
-    def findFileByPattern(self, pattern):
-        for file in os.listdir('.'):
+    def findFileByPattern(self, filelist, pattern):
+        for file in filelist:
             if fnmatch.fnmatch(file, pattern):
                 return file
+        return None
 
 if __name__ == "__main__":
     FirmwareFinder.run()

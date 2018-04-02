@@ -1,7 +1,8 @@
 FROM bitnami/minideb
 
 RUN apt-get -qq update && \
-    apt-get -qq install -y zip wget git python python-pip libz-dev
+    apt-get -qq install -y zip wget git python python-pip libz-dev && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN pip install plumbum
 RUN mkdir -p /opt/android-broadcom-firmware-finder/sdat2img

@@ -22,7 +22,7 @@ Searching for files which match pattern "*bcmdhd*.bin"
 Android image on your local hard drive in this case is here: _/home/neonew/Downloads/lineage-14.1-20180325-nightly-zerofltexx-signed.zip_
 (Adjust it to point to your image)
 
-You can adjust the pattern by passing a parameter *--pattern=xyz* right before *image.zip*.
+You can adjust the pattern by passing a parameter *--broadcom-pattern=xyz* right before *image.zip*.
 The default pattern is _*bcmdhd*.bin_.
 
 You can hide verbose logging via parameter *--log-level=ERROR*.
